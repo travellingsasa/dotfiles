@@ -1,10 +1,13 @@
 #!/bin/zsh
-# installs python and requirements  in a virtual environment
+#!/bin/bash
 
-#TDO - extract versions into seperte variables and enter version by number 1,2,..n
+# Displays installed pyenv python versions and asks users for a version number.
+# The function then installs the vertual environment and installs requirements.
+
+#TDO - extract versions into separate variables and enter version by number 1,2,..n
 
 function setup_python {
-  
+
 pyenv versions
 
 echo "Enter python version from list: "
