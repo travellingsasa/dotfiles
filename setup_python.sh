@@ -20,7 +20,12 @@ then
         python3 -m venv .venv &&
         source .venv/bin/activate &&
         pip install --upgrade pip &&
-        pip install -r requirements.txt
+
+        if [[ -f "requirements.txt"]]
+        then
+             pip install -r requirements.txt
+        fi
+      
 else
         echo $userinput is not in list
 fi
