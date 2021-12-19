@@ -24,6 +24,8 @@ then
         if [[ -f "requirements.txt"]]
         then
              pip install -r requirements.txt
+        else 
+             echo "No requirements file found"
         fi
       
 else
